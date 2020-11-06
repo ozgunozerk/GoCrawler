@@ -66,10 +66,8 @@ func crawler(wg *sync.WaitGroup, urlChannel <-chan string) {
 				resp2.Body.Close()
 
 				fmt.Println("success:", urlItem)
-			} else {
-				fmt.Println("referer and original returned different codes")
-			}
-
+			} 
+		}
 	}
 }
 
